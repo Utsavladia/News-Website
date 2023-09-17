@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect ,useState} from "react";
+import alanBtn from '@alan-ai/alan-sdk-web';
+import "./index.css";
+import NewsCards from "./components/NewsCards";
+import DefaultNewsCards from "./components/DefaultNewsCards"
+import axios from 'axios';
+
 
 function App() {
+  const [articles, setArticles] = useState([]);
+
+
+  useEffect(() => {
+
+    axios.get('https://newsapi.org/v2/top-headlines?country=in&apiKey=8eff3dce9187433185d08ea38a6ecfba')
+      .then((response) => {
+        setArticles(response.data.articles);
+      })
+      .catch((error) => {
+        console.error('Error fetching news:', error);
+      });
+
+      
+    alanBtn({
+        key: '4e0e6c32e4834da58a2f29062e59483a2e956eca572e1d8b807a3e2338fdd0dc/stage',
+        onCommand: (commandData) => {
+
+          if (commandData.command === 'go:back') {
+
+            // Call the client code that will react to the received command
+          }
+
+        }
+    });
+  }, []);
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NewsCards />
+      <DefaultNewsCards articles={articles}/>
+      
     </div>
   );
 }
