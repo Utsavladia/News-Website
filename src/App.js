@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
 
-    axios.get('https://newsapi.org/v2/top-headlines?country=in&apiKey=8eff3dce9187433185d08ea38a6ecfba')
+    axios.get('https://newsapi.org/v2/top-headlines?country=in&apiKey=8389f4795e7f4535bfaeae36bb60a410')
       .then((response) => {
         setArticles(response.data.articles);
       })
@@ -24,10 +24,11 @@ function App() {
 
 
     alanBtn({
-        key: '4e0e6c32e4834da58a2f29062e59483a2e956eca572e1d8b807a3e2338fdd0dc/stage',
-        onCommand: (commandData) => {
+      key: '4e0e6c32e4834da58a2f29062e59483a2e956eca572e1d8b807a3e2338fdd0dc/stage',
+        onCommand: ({command, articles}) => {
 
-          if (commandData.command === 'go:back') {
+          if (command === 'newHeadlines') {
+            setArticles(articles);
 
             // Call the client code that will react to the received command
           }

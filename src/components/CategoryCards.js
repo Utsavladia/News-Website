@@ -4,7 +4,7 @@ import Card from './Card';
 import axios from 'axios';
 
 const CategoryCards = ({ category }) => {
-  const apiKey = '8eff3dce9187433185d08ea38a6ecfba';
+  const apiKey = '8389f4795e7f4535bfaeae36bb60a410';
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
