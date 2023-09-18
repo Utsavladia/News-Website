@@ -2,25 +2,26 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 35px;
+    padding: 90px 45px 35px 45px;
     justify-content: space-evenly;
+    position: relative;
+    backdrop-filter: blur(50px);
 
 }
 
 
 .news-card{
     width: 23%;
-    margin: 5px;
     height: auto;
     border-radius: 20px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    margin: 30px 10px;
-    background-color: rgba(21, 78, 90, 0.3); /* Brighter background color with opacity */
+    margin: 20px 10px;
+    background-color: rgba(255, 255, 255,0.15); /* Background color (black) */
     border: 1px solid black; /* Border (black) */
-    box-shadow: 0 10px 10px 0 rgba(7, 28, 32, 0.3);
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.4); /* Box shadow with specific offsets, blur radius, and color */
 }
 
 .news-card img{
@@ -34,9 +35,9 @@
 
 .card-title{
     padding: 10px 15px 15px;
-    color:  rgb(174, 187, 210);
+    color:  rgb(193, 208, 234);
     font-weight: 600;
-    font-family: ;
+    line-height: 1.5;
 }
 
 .card-description{
@@ -81,10 +82,64 @@
     
 }
 
+.category-heading{
+    width: 100%;
+    padding:20px;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid  #8CEFE9;
+    color:  #8CEFE9;
+    text-align: center;
+    font-size: larger;
+    margin: 20px;
+    box-shadow: 0 15px 15px 0 rgba(11, 19, 33, 0.4); /* Box shadow with specific offsets, blur radius, and color */
+}
+
+.category-heading:hover{
+    background-color: #8CEFE9;
+    color: black;
+    font-weight: bold;
+
+
+}
+
 
 
 
 @media screen and (max-width: 700px) {
+    
+.news-card{
+    width: 95%;  
+    margin: 15px 2px;  
+}
+.left-source{
+    margin-left: 10px;
+    font-size: smaller;
+}
+
+.news-card img{
+    height: 50vw;
+}
+.card-title{
+    padding: 20px 10px;
+    margin: 10px 0px 5px 0px;
+    font-size: 0.9rem;
+    font-weight:500;
+   
+}
+
+.news-cards-default{
+    padding: 10px 5px;
+    /* gap: 5px; */
+}
+
+.category-heading{
+    font-size: medium;
+    border-radius: 15px;
+    padding: 15px;
+
+}
+
 
     
 }

@@ -1,27 +1,22 @@
-.page-background{
+/* .page-background{
   margin: 0;
-  height: 100vh;
-  width: 105%;  
-  background: radial-gradient(circle at 100% 100%, rgba(14, 56, 64, 1) 0%, rgba(16, 49, 56, 1) 30%, rgba(12, 25, 41, 1) 44%, rgb(6, 13, 31) 100%);
+  min-height: 100vh;
+  width: 100%;  
+/* background: linear-gradient(69.6deg,rgb(16, 37, 60) 11.2%,  rgb(41, 61, 87)30%,rgb(39, 63, 94) 71.2%, rgb(16, 37, 60) 98.6%); */
+  /* background-image: url('https://images.unsplash.com/photo-1679678691005-3815eb29bc61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
   background-position: center;
-  background-repeat: no-repeat;
-  position: fixed;
-  left: -5px;
-  top: -10px;
+  background-repeat: no-repeat; */
+  /* position: fixed; */
   /* filter: blur(5px)  ; */
-  padding: 0px;
-  z-index: -1;
-}
-#root{
-  position: relative;
-}
+  /* padding: 0px;
+  z-index: -1; */
+/* } */ 
 body {
+  
   margin: 0px;
   padding: 0px;
   font-family: sans-serif;
-
 }
-
 *{
   box-sizing: border-box;
 }
@@ -29,11 +24,30 @@ body {
 html{
   scroll-behavior: smooth;
 }
-
-
 .App{
   color: white;
 }
+
+
+
+
+.default-card-background{
+  background-image: url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  position: fixed;
+  z-index: -1;
+
+}
+
+/* #root{
+  position: relative;
+  backdrop-filter: blur(20px);
+} */
+
+
+
 
 
 

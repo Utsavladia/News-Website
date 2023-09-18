@@ -4,6 +4,9 @@ import Card from "./Card"
 
 const NewsCardsDefault = ({articles}) => {
   return (
+    <>
+    <div className='default-card-background'></div>
+
     <div className='news-cards-default'>
     {
       articles.map((article,i) =>(
@@ -11,6 +14,7 @@ const NewsCardsDefault = ({articles}) => {
       ))
     }    
     </div>
+    </>
   )
 }
 
