@@ -28,7 +28,7 @@ const timestamp = article.publishedAt;
 const time = timeAgo(timestamp)
   return (
     <div className='news-card'>
-    <img src={article.urlToImage} alt='news image' />
+    <img src={article.urlToImage} alt="latest news" />
     <h4 className='card-title'>{article.title}</h4>
     {/* <p className='card-description'>{article.description}</p> */}
     <div className='card-bottom'>
