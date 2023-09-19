@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&family=Tilt+Prism&display=swap');
+
 .news-cards-default{
     width: 100%;
     display: flex;
@@ -36,8 +38,11 @@
 .card-title{
     padding: 10px 15px 15px;
     color:  rgb(193, 208, 234);
-    font-weight: 600;
-    line-height: 1.5;
+    font-weight: 500;
+    /* line-height: 1.5; */
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .card-description{
