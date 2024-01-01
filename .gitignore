@@ -1,2 +1,6 @@
 node_modules
+<<<<<<< HEAD
 .env
+=======
+App.js
+>>>>>>> 18bdae5b4bee016223c5e8df9fb9ab185a1ab064
