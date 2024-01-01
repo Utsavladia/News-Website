@@ -1,157 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&family=Tilt+Prism&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&family=Tilt+Prism&display=swap");
 
-.news-cards-default{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 90px 45px 35px 45px;
-    justify-content: space-evenly;
-    position: relative;
-    backdrop-filter: blur(50px);
-
+.news-cards-default {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 90px 45px 35px 45px;
+  justify-content: space-evenly;
+  position: relative;
+  backdrop-filter: blur(50px);
 }
 
-
-.news-card{
-    width: 23%;
-    height: auto;
-    border-radius: 20px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    margin: 20px 10px;
-    background-color: rgba(255, 255, 255,0.15); /* Background color (black) */
-    border: 1px solid black; /* Border (black) */
-    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.4); /* Box shadow with specific offsets, blur radius, and color */
+.news-card {
+  width: 23%;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 10px;
+  background-color: rgba(255, 255, 255, 0.15); /* Background color (black) */
+  border: 1px solid black; /* Border (black) */
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.4); /* Box shadow with specific offsets, blur radius, and color */
 }
 
-.news-card img{
-    width: 100%;
-    height: 15vw;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    transform: scale(1.1);
-
+.news-card img {
+  width: 100%;
+  height: 15vw;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  transform: scale(1.1);
 }
 
-.card-title{
-    padding: 10px 15px 15px;
-    color:  rgb(193, 208, 234);
-    font-weight: 500;
-    /* line-height: 1.5; */
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-
+.card-title {
+  padding: 10px 15px 15px;
+  color: rgb(193, 208, 234);
+  font-weight: 500;
+  /* line-height: 1.5; */
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
 }
 
-.card-description{
-    color: rgb(140, 140, 140);
+.card-description {
+  color: rgb(140, 140, 140);
 }
 
-.card-source{
-    color:#8CEFE9;
-    font-size: 0.7rem;
-    font-weight: 300;
+.card-source {
+  color: #8cefe9;
+  font-size: 0.7rem;
+  font-weight: 300;
 }
 
-.card-button{
-    border: 1px solid #8B95A6;
-    border-radius: 15px;
-    color: #8B95A6;
-    padding:  10px 15px;
-    background:transparent;
-    float: right;
-    margin:0px 15px  15px 10px;
+.card-button {
+  border: 1px solid #8b95a6;
+  border-radius: 15px;
+  color: #8b95a6;
+  padding: 10px 15px;
+  background: transparent;
+  float: right;
+  margin: 0px 15px 15px 10px;
 }
 
-.card-button:hover{
-    background-color: #8CEFE9;
-    color: black;
+.card-button:hover {
+  background-color: #8cefe9;
+  color: black;
 }
 
-.card-date{
-    color:#8B95A6;
-    font-size: 0.7rem;
+.card-date {
+  color: #8b95a6;
+  font-size: 0.7rem;
 }
 
-.left-source{
-    margin-left: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.left-source {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-.card-bottom{
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-.category-heading{
-    width: 100%;
-    padding:20px;
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid  #8CEFE9;
-    color:  #8CEFE9;
-    text-align: center;
-    font-size: larger;
-    margin: 20px;
-    box-shadow: 0 15px 15px 0 rgba(11, 19, 33, 0.4); /* Box shadow with specific offsets, blur radius, and color */
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
 }
 
-.category-heading:hover{
-    background-color: #8CEFE9;
-    color: black;
-    font-weight: bold;
-
-
+.category-heading {
+  width: 100%;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #8cefe9;
+  color: #8cefe9;
+  text-align: center;
+  font-size: larger;
+  margin: 20px;
+  box-shadow: 0 15px 15px 0 rgba(11, 19, 33, 0.4); /* Box shadow with specific offsets, blur radius, and color */
 }
 
-
-
+.category-heading:hover {
+  background-color: #8cefe9;
+  color: black;
+  font-weight: bold;
+}
 
 @media screen and (max-width: 700px) {
-    
-.news-card{
-    width: 95%;  
-    margin: 15px 2px;  
-}
-.left-source{
+  .news-card {
+    width: 95%;
+    margin: 15px 2px;
+  }
+  .left-source {
     margin-left: 10px;
     font-size: smaller;
-}
+  }
 
-.news-card img{
+  .news-card img {
     height: 50vw;
-}
-.card-title{
+  }
+  .card-title {
     padding: 20px 10px;
     margin: 10px 0px 5px 0px;
     font-size: 0.9rem;
-    font-weight:500;
-   
-}
+    font-weight: 500;
+  }
 
-.news-cards-default{
+  .news-cards-default {
     padding: 10px 5px;
     /* gap: 5px; */
-}
+  }
 
-.category-heading{
+  .category-heading {
     font-size: medium;
     border-radius: 15px;
     padding: 15px;
-
+  }
 }
 
-
-    
+.screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
-
-
-
-
-
-
-
