@@ -4,7 +4,7 @@ import Card from "./Card";
 import axios from "axios";
 
 const CategoryCards = ({ category }) => {
-  const apiKey = "8389f4795e7f4535bfaeae36bb60a410";
+  const apiKey = process.env.REACT_APP_NEWS_API_KEY;
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
