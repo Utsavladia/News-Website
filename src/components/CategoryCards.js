@@ -2,16 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./styles.css";
 import Card from "./Card";
 import axios from "axios";
+import { newapikey } from "./../config";
 
 const CategoryCards = ({ category }) => {
-  const apiKey = process.env.REACT_APP_NEWS_API_KEY;
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
     // Make an API request using Axios
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${apiKey}`
+        `https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${newapikey}`
       )
       .then((response) => {
         if (response.data.articles) {

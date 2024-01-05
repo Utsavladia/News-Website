@@ -6,19 +6,20 @@ import DefaultNewsCards from "./components/DefaultNewsCards";
 import axios from "axios";
 import Navbar from "./components/Navbar";
 import CategoryCards from "./components/CategoryCards";
-import dotenv from "dotenv";
-
-dotenv.config();
+import { alanapikey, newapikey } from "./config";
 
 function App() {
   const [articles, setArticles] = useState([]);
+  const newsapikey = newapikey;
+
   const alanBtnRef = useRef({}).current;
-  const newsapikey = process.env.REACT_APP_NEWS_API_KEY;
 
   useEffect(() => {
+    console.log("REACT_APP_NEWS_API_KEY:", newapikey);
+
     axios
       .get(
-        `https://newsapi.org/v2/top-headlines?country=in&apiKey=${newsapikey}`
+        `https://newsapi.org/v2/top-headlines?country=in&apiKey=${newapikey}`
       )
       .then((response) => {
         setArticles(response.data.articles);
@@ -28,13 +29,13 @@ function App() {
       });
 
     alanBtnRef.btnInstance = alanBtn({
-      key: process.env.REACT_APP_ALAN_KEY,
+      key: alanapikey,
 
       onCommand: async ({ command, category }) => {
         if (command === "categories") {
           try {
             const response = await axios.get(
-              `https://newsapi.org/v2/top-headlines?country=in&apiKey=${newsapikey}&category=${category}`
+              `https://newsapi.org/v2/top-headlines?country=in&apiKey=${newapikey}&category=${category}`
             );
             setArticles(response.data.articles);
           } catch (error) {
@@ -53,7 +54,7 @@ function App() {
         } else if (command === "topic") {
           try {
             const response = await axios.get(
-              `https://newsapi.org/v2/top-headlines?country=in&apiKey=${newsapikey}&q=${category}`
+              `https://newsapi.org/v2/top-headlines?country=in&apiKey=${newapikey}&q=${category}`
             );
             setArticles(response.data.articles);
           } catch (error) {
