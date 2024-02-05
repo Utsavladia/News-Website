@@ -53,11 +53,11 @@ npm Start
 
 
 #### Category Page
-![Category section](src/Asset/Screenshot 2024-02-05 113234.png)
+![Category section](src/Asset/categories.png)
 
 
 #### command for specific Topic...
-![Command for specific Topic](src/Asset/Screenshot 2024-02-05 113407.png)
+![Command for specific Topic](src/Asset/command.png)
 
 
 ## Features
