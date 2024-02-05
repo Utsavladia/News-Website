@@ -48,15 +48,18 @@ npm Start
 
 
 ## Demo
-#### Mian Page
+### Main Page
+
 ![Main Page](src/Asset/main_page.png)
 
 
-#### Category Page
+### Category Page
+
 ![Category section](src/Asset/categories.png)
 
 
-#### command for specific Topic...
+### Command for specific Topic...
+
 ![Command for specific Topic](src/Asset/command.png)
 
 
