@@ -49,7 +49,7 @@ npm Start
 
 ## Demo
 #### Mian Page
-![Main Page](src/Asset/Screenshot 2024-02-05 113203.png)
+![Main Page](/src/Asset/Screenshot 2024-02-05 113203.png)
 
 
 #### Category Page
